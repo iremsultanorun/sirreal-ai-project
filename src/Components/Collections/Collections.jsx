@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet';
 
 const Collections = () => {
     return (
+        
         <div className='collection-div' id='collections-section'>
             <Helmet>
                 <title>Collections</title>
