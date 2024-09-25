@@ -1,0 +1,53 @@
+.collection-items-container {
+    gap: 3rem;
+    margin-top: 6rem;
+    padding: 0 .5rem;
+}
+
+.collection-item-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    margin-top: 9rem;
+    margin-bottom: 15rem;
+}
+
+.collection-item {
+    position: relative;
+}
+
+.collection-group h4 {
+    font-size: 4rem;
+    margin: 4rem 0 0 5rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.collection-item-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.collection-item button {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+    transition: background .5s;
+    cursor: pointer;
+}
+
+.collection-item button:hover {
+    background: rgb(171, 171, 171);
+}
+
+.size-icon {
+    font-size: 3rem;
+}

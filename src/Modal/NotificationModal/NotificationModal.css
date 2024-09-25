@@ -1,0 +1,90 @@
+.notification-modal {
+    width: 30%;
+    background-color: rgb(227, 227, 227);
+    position: absolute;
+    top: 10rem;
+    right: 2%;
+    z-index: 2;
+    padding: 2rem 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    max-height: 50rem;
+    overflow: scroll;
+
+}
+
+.update-container,
+.read-notification-update-container {
+    width: 100%;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.read-notification-update-container {
+    background-color: rgb(146, 146, 146);
+}
+
+.update-container h3,
+.read-notification-update-container h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+
+.read-notification-update-container h3 {
+    color: rgb(235, 235, 235);
+}
+
+.update-content {
+    width: 25rem;
+}
+
+.update-container span {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(48, 48, 243);
+    border-radius: 50%;
+}
+
+.update-content-text,
+.read-notification-text{
+    overflow: hidden;
+    /* Taşan içeriği gizler */
+    text-overflow: ellipsis;
+    /* Taşan metni "..." ile gösterir */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Gösterilmek istenen satır sayısı */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    color: rgb(231, 231, 231);
+}
+
+.read-notification-text {
+    color: rgb(207, 207, 207);
+}
+
+.subscribe-info {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.subscribe-info p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(27, 21, 108);
+}
+@media screen and (max-width:385px) {
+    .notification-modal {
+        width: 50%;
+    }
+}

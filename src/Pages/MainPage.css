@@ -1,0 +1,17 @@
+.main-page{
+    position: relative;
+  }
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-container {
+    margin: 4rem 0 0 4rem;
+  }
+  
+  .container {
+    margin: 15rem 3rem 0 .5rem;
+  }
+  

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+ 
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+
+ 
+}
+li{
+  list-style-type: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:2560px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width:2560px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width:2000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:1700px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width:950px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+
+@media screen and (max-width:650px) {
+  html {
+    font-size: 4px;
+  }
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

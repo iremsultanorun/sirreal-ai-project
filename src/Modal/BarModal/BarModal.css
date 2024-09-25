@@ -1,0 +1,11 @@
+.bar-modal{
+     background-color: rgb(227, 227, 227);
+    position: absolute;
+    top: 10rem ;
+    right: 2%;
+    z-index: 2;
+    padding: 2rem 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+
+}

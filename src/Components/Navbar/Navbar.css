@@ -1,0 +1,53 @@
+nav {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-item {
+    background-color: #d8d7d7a3;
+    color: black;
+    padding: 0.8rem 4rem;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: #353535;
+    color: white;
+    transition: all 0.5s;
+}
+
+.about {
+    background-color: white;
+}
+
+.tutorial {
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 425px) {
+    nav {
+        display: none;
+    }
+}

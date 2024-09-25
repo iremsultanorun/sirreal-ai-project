@@ -1,0 +1,17 @@
+main{
+    display: flex;
+}
+
+video {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    z-index: -3;
+}
+
+.right-container{
+    width: 100%;
+    margin-left: 36%;
+    position: relative;
+}
+

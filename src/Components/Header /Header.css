@@ -1,0 +1,106 @@
+header {
+    width: 95%;
+    height: 5rem;
+    background-color: #717171b3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    padding: 2.8rem 0.5rem;
+    margin: 2rem;
+}
+
+.toolbars {
+    display: flex;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar-search {
+    background: #9b9b9b;
+}
+
+.toolbar-bar {
+    background-color: #7d7b7b;
+    display: none !important;
+}
+
+.toolbar-notification {
+    background-color: #b6b6b6;
+    position: relative;
+}
+.search-input {
+    width: 0%;
+    border: none;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0 .5rem .5rem;
+    padding: .6rem;
+    font-size: 1.7rem;
+    color: white;
+    transition: width .5s;
+}
+
+.search-input-width {
+    width: 80%;
+    border-bottom: .2rem solid rgb(0, 0, 0);
+
+}
+
+.toolbar-search-background {
+    background: none;
+}
+
+.logo-icon {
+    font-size: 3rem;
+}
+
+.search-icon,
+.bar-icon {
+    font-size: 2rem;
+}
+
+.notification-icon {
+    font-size: 3rem;
+}
+.logo-container{
+    background-color: black;
+}
+.logo-container,
+.toolbar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toolbar:hover {
+    background-color: #353535;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+.notification-dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    top: 1.1rem;
+    right: 1rem;
+}
+
+
+@media screen and (max-width: 425px) {
+    .toolbar-bar {
+        display: flex;
+    }
+}

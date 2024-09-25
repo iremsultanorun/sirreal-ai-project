@@ -1,0 +1,10 @@
+.circles-wrapper {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: .2rem solid;
+    z-index: -5;
+}

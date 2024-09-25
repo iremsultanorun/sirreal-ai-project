@@ -1,0 +1,43 @@
+
+.page-links {
+    text-transform: capitalize;
+    color: rgb(29, 29, 29);
+    
+}
+ .page-links li {
+    text-transform: capitalize;
+    color: rgb(29, 29, 29);
+    margin: .5rem 0;
+    font-size: 1.7rem;
+}
+
+.page-links span {  
+    height: .6rem;
+    background: rgb(40, 40, 40);
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+ .page-links span:nth-child(2) {
+    width: 9rem;
+}
+ .page-links span:nth-child(4) {
+    width: 12rem;
+}
+ .page-links span:nth-child(6) {
+    width: 15rem;
+}
+ .page-links span:nth-last-child(1) {
+    width: 20rem;
+}
+
+.terms {
+    margin-top: 5rem;
+}
+
+.terms li {
+    color: rgb(16, 8, 157);
+    font-size: 1.2rem;
+    text-decoration: underline;
+    margin-top: .3rem;
+}

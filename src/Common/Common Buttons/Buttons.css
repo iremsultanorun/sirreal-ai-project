@@ -1,0 +1,29 @@
+.buttons-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.button-container {
+    color: black;
+    background-color: #b9b9b9;
+    transition: background-color .5s;
+}
+
+.buttons-container:hover .button-container {
+    background-color: #f4f4f4ee;
+}
+
+.button-text {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.detail-icon-container {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-left: -0.5rem;
+}

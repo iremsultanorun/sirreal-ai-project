@@ -1,0 +1,84 @@
+.roadmap-title-container {
+    margin-top: 10rem;
+
+}
+
+.branch-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 30rem;
+
+}
+
+.branch-wrapper {
+    position: relative;
+}
+
+.branch {
+    width: 8.5rem;
+    height: 5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.branch .roadmap-text-container {
+    padding: 2rem 2rem;
+    background-color: rgba(176, 176, 176, 0.313);
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    margin: 6rem;
+    width: 25rem;
+}
+
+.branch-two .roadmap-text-container,
+.branch-four .roadmap-text-container {
+    padding: 2rem 2rem;
+    background-color: rgba(176, 176, 176, 0.313);
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    margin-left: -25rem;
+    width: 25rem;
+}
+
+.roadmap-text-container p {
+    font-size: 1.3rem;
+}
+
+.branch-one {
+    top: 5rem;
+    border-top: .8rem solid white;
+    border-right: .8rem solid white;
+
+}
+
+.branch-two {
+    top: 25rem;
+    left: -8.5rem;
+    border-top: .8rem solid white;
+    border-left: .8rem solid white;
+}
+
+.branch-three{
+    top: 45rem;
+    border-top: .8rem solid white;
+    border-right: .8rem solid white;
+}
+
+.branch-four {
+    top: 60rem;
+    border-top: .8rem solid white;
+    border-left: .8rem solid white;
+    left: -8.5rem;
+}
+
+.branch-line {
+    width: .8rem;
+    height: 70rem;
+    background-color: rgb(255, 255, 255);
+
+}
