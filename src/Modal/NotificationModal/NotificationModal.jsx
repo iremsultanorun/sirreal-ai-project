@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './NotificationModal.css';
 import { LoremIpsum } from 'lorem-ipsum';
 import { useDispatch } from 'react-redux';
-import { openModal } from '../../features/modal/modalsSlice'; // Modal redux import
+import { openModal } from '../../redux/modal/modalsSlice';
 import { HashLink } from 'react-router-hash-link';
 import { Helmet } from 'react-helmet';
 
 const NotificationModal = ({ setSelectedItem }) => {
     const dispatch = useDispatch();
-    // Random sentences are generated using the Lorem Ipsum library
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
             max: 8,
@@ -20,33 +19,32 @@ const NotificationModal = ({ setSelectedItem }) => {
         }
     });
 
-    const [readNotification, setReadNotification] = useState([]); // Defined for read notifications
-    const [unreadNotification, setUnreadNotification] = useState(() => { // Defined for unread notifications
-        const random = Math.floor(Math.random() * 15); // Generate a random number between 1 and 15 and assign it to the random variable
-        const items = []; // Holds all notifications, both read and unread
-        for (let i = 1; i < random; i++) { // Start from 1 and generate notifications up to the random number
-            // Create random titles and paragraphs using the lorem ipsum library and store them in title and text variables
+    const [readNotification, setReadNotification] = useState([]);
+    const [unreadNotification, setUnreadNotification] = useState(() => {
+        const random = Math.floor(Math.random() * 15);
+        const items = [];
+        for (let i = 1; i < random; i++) {
             const title = lorem.generateWords(5);
             const text = lorem.generateSentences(2);
-
-            items.push({ id: i, title, text }); // Add to items
+            items.push({ id: i, title, text });
         }
-        return items; // Return items
+
+        return items;
     });
 
     const handleReadNotification = (index) => {
-        const item = unreadNotification[index]; // Store the index of each unread notification in the item variable
+        const item = unreadNotification[index];
 
-        // Add to the read array
+
         dispatch(openModal());
         setReadNotification([...readNotification, item]);
 
-        // Remove from the unread array
+
         const updatedUnreadNotification = [...unreadNotification];
-        updatedUnreadNotification.splice(index, 1); // Remove the item with splice
+        updatedUnreadNotification.splice(index, 1);
         setUnreadNotification(updatedUnreadNotification);
 
-        // Pass the selected item to the Home component
+
         setSelectedItem(item);
     };
 

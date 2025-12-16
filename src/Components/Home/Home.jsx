@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Home.css';
-import sirreal from '../../assets/sirreal-ai-video.mp4';
+import sirreal from '../../assets/sirreal.mp4';
 import SirrealAiInfo from './Sirreal.ai info section/SirrealAiInfo';
 import SirrialAiSlider from './Sirrial.ai slider section/SirrialAiSlider';
 import BarModal from '../../Modal/BarModal/BarModal';
