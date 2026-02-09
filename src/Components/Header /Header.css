@@ -1,5 +1,5 @@
 header {
-    width: 95%;
+    width: 100%;
     height: 5rem;
     background-color: #717171b3;
     display: flex;
@@ -12,10 +12,12 @@ header {
 
 .toolbars {
     display: flex;
+    gap: 5px;
 }
 .search-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .toolbar-search {
@@ -32,7 +34,7 @@ header {
     position: relative;
 }
 .search-input {
-    width: 0%;
+    width: 0px;
     border: none;
     border: none;
     outline: none;
@@ -42,12 +44,18 @@ header {
     font-size: 1.7rem;
     color: white;
     transition: width .5s;
+    position: absolute;
+right: 60px;
+top: 5px;
+opacity: 0;
+z-index: 999;
 }
 
 .search-input-width {
-    width: 80%;
+    opacity: 1;
+    width:200px;
+    display: inline-block;
     border-bottom: .2rem solid rgb(0, 0, 0);
-
 }
 
 .toolbar-search-background {
@@ -99,8 +107,31 @@ header {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1200px) {
+    .search-input {
+background-color: #7d7b7b;
+    right: 20px;
+    top: 60px;
+    border-radius: 5rem;
+    }
+    .search-input-width{
+        border-bottom: .2rem solid rgb(0, 0, 0);
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .logo-container,
+    .toolbar {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
     .toolbar-bar {
         display: flex !important;
+    }
+    header{
+        margin:2rem 1rem;
     }
 }
