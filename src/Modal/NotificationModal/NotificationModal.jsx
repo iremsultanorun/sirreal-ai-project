@@ -2,12 +2,17 @@ import { useState } from 'react';
 import './NotificationModal.css';
 import { LoremIpsum } from 'lorem-ipsum';
 import { useDispatch } from 'react-redux';
-import { openModal } from '../../redux/modal/modalsSlice';
+import { openModal, setSelectedItem, toggleModal } from '../../redux/modal/modalsSlice';
 import { HashLink } from 'react-router-hash-link';
 import { Helmet } from 'react-helmet';
+import { useSelector } from 'react-redux';
+import NotificationItemModal from './NotificationModalItem/NotificationItemModal';
+import { useEffect } from 'react';
 
-const NotificationModal = ({ setSelectedItem }) => {
+const NotificationModal = () => {
     const dispatch = useDispatch();
+    const selectedItem=useSelector(state=>state.modals.selectedItem)
+    const modal = useSelector(state => state.modals.activeModal)
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
             max: 8,
@@ -18,7 +23,6 @@ const NotificationModal = ({ setSelectedItem }) => {
             min: 4
         }
     });
-
     const [readNotification, setReadNotification] = useState([]);
     const [unreadNotification, setUnreadNotification] = useState(() => {
         const random = Math.floor(Math.random() * 15);
@@ -31,25 +35,29 @@ const NotificationModal = ({ setSelectedItem }) => {
 
         return items;
     });
-
+    // useEffect(() => {
+    //     if (selectedItem) {
+    //         dispatch(openModal("notificationItem"))
+    //     }
+    // }, [selectedItem])
     const handleReadNotification = (index) => {
         const item = unreadNotification[index];
-
-
-        dispatch(openModal());
         setReadNotification([...readNotification, item]);
-
-
-        const updatedUnreadNotification = [...unreadNotification];
-        updatedUnreadNotification.splice(index, 1);
-        setUnreadNotification(updatedUnreadNotification);
-
-
-        setSelectedItem(item);
+        const updated = [...unreadNotification];
+        updated.splice(index, 1);
+        setUnreadNotification(updated);
+        dispatch(setSelectedItem(item));
+        dispatch(openModal("notificationItem"))
     };
-
+    console.log(selectedItem);
     return (
         <div className='notification-modal'>
+            {modal === "notificationItem" && selectedItem && (
+                <NotificationItemModal
+                    item={selectedItem.title}
+                    text={selectedItem.text}
+                />
+            )}
             <Helmet>
                 <title>Notification</title>
             </Helmet>

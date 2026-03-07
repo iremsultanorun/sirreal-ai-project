@@ -1,8 +1,8 @@
 .notification-modal {
-    width: 30%;
+    width: 400px;
     background-color: rgb(227, 227, 227);
     position: absolute;
-    top: 10rem;
+    top: 7rem;
     right: 2%;
     z-index: 2;
     padding: 2rem 4rem;
@@ -58,12 +58,9 @@
 .update-content-text,
 .read-notification-text{
     overflow: hidden;
-    /* Taşan içeriği gizler */
     text-overflow: ellipsis;
-    /* Taşan metni "..." ile gösterir */
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    /* Gösterilmek istenen satır sayısı */
     -webkit-box-orient: vertical;
     white-space: normal;
     color: rgb(231, 231, 231);
@@ -83,8 +80,19 @@
     font-size: 1.2rem;
     color: rgb(27, 21, 108);
 }
-@media screen and (max-width:385px) {
-    .notification-modal {
-        width: 50%;
+
+@media (max-width:767px) {
+    .notification-modal{
+        width: 350px;
+    }
+}
+@media (max-width:500px) {
+    .notification-modal{
+        width: 300px;
+    }
+}
+@media (max-width:425px) {
+    .notification-modal{
+        width: 250px;
     }
 }

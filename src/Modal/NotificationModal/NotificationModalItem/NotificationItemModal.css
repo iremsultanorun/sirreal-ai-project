@@ -1,11 +1,12 @@
 .notification-item-modal {
     position: absolute;
     z-index: 9;
-    top: 2%;
-    left: 5%;
-    width: 50rem;
-    background-color: rgb(83, 83, 83);
-    padding: 4rem 7rem 9rem 7rem;
+top: 150px;
+    left: 150px;
+    max-width: 500px;
+
+    background-color: #535353;
+    padding: 2rem 3rem 5rem 3rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 20px;
 }
@@ -18,13 +19,14 @@
 
 .notification-item-modal p {
     font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .close-icon-container {
     width: 100%;
     display: flex;
     justify-content: end;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .close-icon {
@@ -40,8 +42,22 @@
     text-shadow: 10px 10px 20px rgb(255, 255, 255);
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:767px) {
     .notification-item-modal {
-        width: 40rem;
+        max-width: 400px;
+        top: 100px;
+        left: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .notification-item-modal {
+       width: 100%;
+        top: 100px;
+        left: 10px;
+        padding: 1rem 2rem 4rem 2rem;
+    }
+    .notification-item-modal p {
+        font-size: 1rem;
+        line-height: 1.3rem;
     }
 }

@@ -6,6 +6,7 @@ import { closeModal } from '../../../redux/modal/modalsSlice';
 
 const NotificationItemModal = ({item,text}) => {
   const dispatch=useDispatch()
+  console.log(item,text)
   return (
      <div className='notification-item-modal'>
       <div className="close-icon-container"onClick={()=> {dispatch(closeModal())}} ><IoClose className='close-icon' /></div>

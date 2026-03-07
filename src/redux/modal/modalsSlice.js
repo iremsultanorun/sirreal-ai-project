@@ -1,34 +1,31 @@
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
-    isOpenBarModal: false,
-    isOpenNotificationModal: false,
-    isOpenNotificationItemModal: false,
-    isSubscribeButton:true,
-
+    // isOpenBarModal: false,
+    // isOpenNotificationModal: false,
+    // isOpenNotificationItemModal: false,
+    // isSubscribeButton:true,
+    activeModal:null,
+    selectedItem:null
 }
 export const modalsSlice = createSlice({
     name: 'modals',
     initialState,
     reducers: {
-        openModal: (state) => {
-            state.isOpenBarModal = true;
-            state.isOpenNotificationItemModal = true;
+        openModal: (state,action) => {
+      state.activeModal=action.payload
         },
         closeModal: (state) => {
-            state.isOpenNotificationItemModal = false;
-            state.isOpenBarModal = false;
-            state.isSubscribeButton=false;
-
+           state.activeModal=null
         },
-        closeNotificationaModal: (state) =>{
-            state.isOpenNotificationModal = false;
+        toggleModal: (state,action) =>{
+            state.activeModal=state.activeModal===action.payload?null:action.payload
         },
-        openNotificationaModal: (state) =>{
-            state.isOpenNotificationModal = true;
+        setSelectedItem:(state,action)=>{
+            state.selectedItem=action.payload
         }
     }
 })
 
-export const { openModal, closeModal,closeNotificationaModal ,openNotificationaModal } = modalsSlice.actions
+export const { openModal, closeModal,toggleModal,setSelectedItem } = modalsSlice.actions
 export default modalsSlice.reducer
 

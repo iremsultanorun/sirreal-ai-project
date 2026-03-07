@@ -5,24 +5,27 @@ import Circles from '../../../Common/Common Circles/Circles';
 import { collectionsData } from './CollectionsData.jsx';
 import CollectionModal from './../../../Modal/CollectionModal/CollectionModal.jsx';
 import { motion } from 'framer-motion'; // Framer Motion importu
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const CollectionItems = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // modal is initially closed
-  const [selectedCollection, setSelectedCollection] = useState(null); // no collection selected initially
-
+  const dispatch=useDispatch()
+const modal=useSelector((state)=>state.modals.activeModal)
+const isModal=modal===null
+  const [selectedCollection, setSelectedCollection] = useState(null); 
   const openModal = (collection, imageIndex) => {
-    setSelectedCollection({ // update state based on the selected image
+    setSelectedCollection({
       image: collection.collectionImages[imageIndex],
       title: collection.collectionDetailTitle[imageIndex],
       content: collection.collectionDetailContent,
       groupName: collection.collectionGroupName,
     });
-    setIsModalOpen(true); // show modal
+ dispatch(openModal("collection"))
   };
 
-  // function to close the modal
+
   const closeModal = () => {
-    setIsModalOpen(false);
+    dispatch(closeModal())
     setSelectedCollection(null);
   };
 
@@ -57,8 +60,8 @@ const CollectionItems = () => {
         </div>
       ))}
 
-      {/* Show CollectionModal when the modal is open */}
-      {isModalOpen && selectedCollection && (
+   
+      {isModal && selectedCollection && (
         <CollectionModal
           image={selectedCollection.image}
           title={selectedCollection.title}
