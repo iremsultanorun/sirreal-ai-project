@@ -1,0 +1,105 @@
+.sirreal-info-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    padding: 5rem 0 10rem 5rem;
+}
+
+.sirreal-info-container h1 {
+    font-size: 7rem;
+    color: black;
+    font-family: "Krona One", sans-serif;
+}
+
+.subscribe-container {
+    display: flex;
+    width: 95%;
+    justify-content: end;
+    padding-right: 5%;
+    margin-bottom: 2rem;
+    height: 4rem;
+}
+
+.sirreal-info-container ul {
+    margin-top: 6rem;
+}
+
+.sirreal-info-container ul li {
+    color: black;
+    list-style-type: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: "Jura", sans-serif;
+    font-weight: 500;
+}
+@media screen and (max-width: 1000px){
+    .sirreal-info-container h1 {
+        font-size: 5rem;
+    }
+    .sirreal-info-container ul li {
+        list-style-type: none;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sirreal-info-container {
+        padding: 3rem 0 6rem 3rem;
+        border-radius: 30px 0 0 30px;
+    }
+
+    .sirreal-info-container h1 {
+        font-size: 5.5rem;
+    }
+
+    .sirreal-info-container ul {
+        margin-top: 4rem;
+    }
+
+    .sirreal-info-container ul li {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sirreal-info-container {
+        min-height: 250px;
+        padding: 2rem 0 4rem 2rem;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .sirreal-info-container h1 {
+        font-size: 3.8rem;
+    }
+
+    .sirreal-info-container ul {
+        margin-top: 2.5rem;
+    }
+
+    .sirreal-info-container ul li {
+        font-size: 1.2rem;
+    }
+
+    .subscribe-container {
+        height: 3rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .sirreal-info-container {
+        padding: 1.5rem 0 3rem 1.5rem;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .sirreal-info-container h1 {
+        font-size: 2.8rem;
+    }
+
+    .sirreal-info-container ul li {
+        font-size: 1rem;
+    }
+
+    .subscribe-container {
+        height: 2.5rem;
+    }
+}

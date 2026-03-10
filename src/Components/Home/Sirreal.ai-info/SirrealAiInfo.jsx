@@ -1,4 +1,3 @@
-import React from 'react'
 import './SirrealAiInfo.css'
 import Buttons from '../../../Common/Common Buttons/Buttons'
 import { HashLink } from 'react-router-hash-link'
@@ -30,15 +29,11 @@ const SirrealAiInfo = () => {
         }}
       >
         <div>
-          {/* subscribe container */}
           <div className='subscribe-container'>
-            {/* navigate to the subscribe section in the footer using hashlink */}
             <HashLink to='/#subscribe' smooth>
               <Buttons buttonText="subscribe" />
             </HashLink>
           </div>
-
-
           <motion.h1
             variants={textAnimation}
             initial="initial"

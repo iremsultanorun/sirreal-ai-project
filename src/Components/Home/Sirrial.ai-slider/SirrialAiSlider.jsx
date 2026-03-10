@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './SirrialAiSlider.css';
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -8,15 +8,12 @@ import { motion } from 'framer-motion';
 
 const SirrialAiSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Geri gitme fonksiyonu
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? slidesData.length - 1 : prevIndex - 1
     );
   };
 
-  // İleri gitme fonksiyonu
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === slidesData.length - 1 ? 0 : prevIndex + 1

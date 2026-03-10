@@ -1,14 +1,12 @@
 
 import './Home.css';
 import sirreal from '../../assets/sirreal.mp4';
-import SirrealAiInfo from './Sirreal.ai info section/SirrealAiInfo';
-import SirrialAiSlider from './Sirrial.ai slider section/SirrialAiSlider';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+import SirrealAiInfo from './Sirreal.ai-info/SirrealAiInfo';
+import SirrialAiSlider from './Sirrial.ai-slider/SirrialAiSlider';
 
 const Home = () => {
-
-
     return (
         <main id='home-section'> 
          <Helmet>

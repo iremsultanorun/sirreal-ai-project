@@ -2,12 +2,11 @@ import { useState } from 'react';
 import './NotificationModal.css';
 import { LoremIpsum } from 'lorem-ipsum';
 import { useDispatch } from 'react-redux';
-import { openModal, setSelectedItem, toggleModal } from '../../redux/modal/modalsSlice';
+import { openModal, setSelectedItem } from '../../redux/modal/modalsSlice';
 import { HashLink } from 'react-router-hash-link';
 import { Helmet } from 'react-helmet';
 import { useSelector } from 'react-redux';
 import NotificationItemModal from './NotificationModalItem/NotificationItemModal';
-import { useEffect } from 'react';
 
 const NotificationModal = () => {
     const dispatch = useDispatch();

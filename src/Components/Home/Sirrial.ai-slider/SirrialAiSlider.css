@@ -6,7 +6,6 @@
   align-items: center;
   margin-top: 6rem;
   overflow: hidden;
-
 }
 
 .slider-wrapper {
@@ -60,7 +59,6 @@
   background-color: black;
   cursor: pointer;
   transition: background-color .5s;
-
 }
 
 .slide-content-bottom button:hover {
@@ -78,7 +76,6 @@
   align-items: center;
   justify-content: space-between;
   padding: .5rem;
-
 }
 
 .arrow-container button {
@@ -105,63 +102,51 @@
   background-color: rgb(49, 49, 49);
 }
 
-@media screen and (max-width:2545px) {
-  .slider-container {
-    width: 93rem;
-  }
-}
-
-@media screen and (max-width:2460px) {
-  .slider-container {
-    width: 85rem;
-  }
-}
-
-@media screen and (max-width:2250px) {
-  .slider-container {
-    width: 85rem;
-  }
-}
-@media screen and (max-width:768px) {
+@media screen and (max-width: 1024px) {
   .slide-item {
-    min-width: 38%;
+      min-width: 45%;
+  }
+
+  .slider-container {
+      margin-top: 4rem;
   }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 768px) {
   .slide-item {
-    min-width: 35%;
+      min-width: 40%;
   }
 
   .slider-container {
-    margin-top: 5rem;
+      margin-top: 3rem;
+  }
+
+  .slider {
+      gap: 1.2rem;
   }
 }
 
-@media screen and (max-width:500px) {
-  .slider-container {
-    width: 70rem;
-  }
-}
-
-@media screen and (max-width:430px) {
-  .slider-container {
-    width: 60rem;
-  }
-}
-
-@media screen and (max-width:375px) {
-  .slider-container {
-    width: 50rem;
-    margin-top: 2rem;
-  }
+/* Büyük telefon */
+@media screen and (max-width: 425px) {
   .slide-item {
-    min-width: 35%;
+      min-width: 50%;
+  }
+
+  .slider-container {
+      margin-top: 2rem;
+  }
+
+  .slide-content-bottom p {
+      font-size: 1rem;
+  }
+
+  .arrow-container button {
+      width: 3rem;
+      height: 3rem;
+  }
+
+  .arrow {
+      font-size: 2.5rem;
   }
 }
 
-@media screen and (max-width:320px) {
-  .slide-content-bottom {
-    width: 70%;
-  }
-}

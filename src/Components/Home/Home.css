@@ -1,18 +1,55 @@
-main{
+main {
     display: flex;
-  
+    min-height: 100vh;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: red;
 }
 
 video {
-    width: 40%;
+    width: 100%;
     height: auto;
-    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 20%;
     z-index: -3;
 }
 
-.right-container{
-    width: 100%;
-    margin-left: 36%;
+.left-container {
+    width: 40%;
+    flex-shrink: 0;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.right-container {
+    width: 60%;
     position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .left-container {
+   display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    video {
+        height: 25vh;
+    }
+
+    .left-container {
+        height: 25vh;
+    }
+}
