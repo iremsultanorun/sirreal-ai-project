@@ -1,21 +1,37 @@
-.title-container{
-    width: 50%;
-    height: 4rem;
+.title-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.title-container {
+    width: fit-content;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    padding-left: 2.5rem; 
-    color: black;  
+    padding: 1rem 3rem;
+    color: black;
 }
-.title-container h2{
+
+.title-container h2 {
     font-size: 3rem;
     font-family: serif;
     font-weight: 300;
     text-transform: uppercase;
 }
-.line-container{
-    width: 20%;
-    height:2rem ;
+
+.line-container {
+    width: 40%;
+    height: 2rem;
     background-color: rgb(255, 255, 255);
     margin-top: 1rem;
+}
+
+@media screen and (max-width:500px) {
+    .line-container {
+        width: 80%;
+        height: 1rem;
+    }
 }

@@ -1,12 +1,10 @@
-
-.more-collections-container{
+.more-collections-container {
     width: 100%;
     display: flex;
     justify-content: end;
-    
+    padding: 0 1rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
-

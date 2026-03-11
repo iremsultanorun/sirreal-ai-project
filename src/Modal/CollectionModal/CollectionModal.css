@@ -72,3 +72,45 @@
     right: 3rem;
     cursor: pointer;
 }
+
+@media screen and (max-width:767px) {
+    .collection-modal {
+
+        overflow-y: scroll;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .collection-right-container {
+        width: 100%;
+    }
+
+    .collection-left-container {
+        width: 100%;
+    }
+
+    .collection-modal-image {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .modal-image {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .collection-modal {
+        padding: .5rem;
+    }
+
+    .modal-image {
+        width: 100%;
+    }
+}
