@@ -9,7 +9,7 @@ import UpButton from './../../src/Common/Common Up Button/UpButton';
 const MainPage = () => {
   return (
     <div className='main-page'>
-        {/* <UpButton/> */}
+        <UpButton/>
         <div className="header-container">
           <Header />
         </div>
