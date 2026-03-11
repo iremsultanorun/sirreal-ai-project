@@ -18,10 +18,9 @@ const MainPage = () => {
         </div>
         <div className="container">
           <Collections />
-          {/* <Roadmap /> */}
+          <Roadmap />
         </div>
-
-        {/* <Footer /> */}
+        <Footer />
       </div>
   )
 }

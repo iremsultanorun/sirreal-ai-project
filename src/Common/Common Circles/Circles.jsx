@@ -10,7 +10,7 @@ const Circles = () => {
     }
 
     return (
-        <div>
+        <div className='circles-container'>
             <div className='center circles-wrapper'>
                 {circles}
             </div>
