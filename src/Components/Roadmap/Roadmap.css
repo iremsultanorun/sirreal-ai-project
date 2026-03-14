@@ -1,5 +1,5 @@
-.roadmap-title-container {
-    margin-top: 10rem;
+#roadmap-section{
+    overflow: hidden !important;
 }
 
 .branch-container {
