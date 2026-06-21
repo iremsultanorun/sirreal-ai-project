@@ -1,6 +1,5 @@
-.roadmap-title-container {
-    margin-top: 10rem;
-
+#roadmap-section{
+    overflow: hidden !important;
 }
 
 .branch-container {
@@ -10,7 +9,6 @@
     align-items: center;
     margin-top: 10rem;
     margin-bottom: 30rem;
-
 }
 
 .branch-wrapper {
@@ -53,7 +51,6 @@
     top: 5rem;
     border-top: .8rem solid white;
     border-right: .8rem solid white;
-
 }
 
 .branch-two {
@@ -63,7 +60,7 @@
     border-left: .8rem solid white;
 }
 
-.branch-three{
+.branch-three {
     top: 45rem;
     border-top: .8rem solid white;
     border-right: .8rem solid white;
@@ -80,5 +77,154 @@
     width: .8rem;
     height: 70rem;
     background-color: rgb(255, 255, 255);
+}
 
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .roadmap-title-container {
+        margin-top: 6rem;
+    }
+
+    .branch-container {
+        margin-top: 6rem;
+        margin-bottom: 20rem;
+    }
+
+    .branch .roadmap-text-container {
+        width: 18rem;
+        margin: 4rem;
+        font-size: 1.1rem;
+    }
+
+    .branch-two .roadmap-text-container,
+    .branch-four .roadmap-text-container {
+        width: 18rem;
+        margin-left: -18rem;
+    }
+
+    .roadmap-text-container p {
+        font-size: 1.1rem;
+    }
+
+    .branch-one {
+        top: 4rem;
+    }
+
+    .branch-two {
+        top: 20rem;
+    }
+
+    .branch-three {
+        top: 36rem;
+    }
+
+    .branch-four {
+        top: 50rem;
+    }
+
+    .branch-line {
+        height: 58rem;
+    }
+}
+
+/* Büyük telefon */
+@media screen and (max-width: 600px) {
+    .roadmap-title-container {
+        margin-top: 4rem;
+    }
+
+    .branch-container {
+        margin-top: 4rem;
+        margin-bottom: 15rem;
+    }
+
+    .branch {
+        width: 5rem;
+        height: 3.5rem;
+    }
+
+    .branch .roadmap-text-container {
+        width: 13rem;
+        margin: 3rem;
+        padding: 1.2rem;
+        border-bottom-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+
+    .branch-two .roadmap-text-container,
+    .branch-four .roadmap-text-container {
+        width: 13rem;
+        margin-left: -13rem;
+        padding: 1.2rem;
+    }
+
+    .roadmap-text-container p {
+        font-size: 1rem;
+    }
+
+    .branch-one {
+        top: 3rem;
+        border-top: .5rem solid white;
+        border-right: .5rem solid white;
+    }
+
+    .branch-two {
+        top: 15rem;
+        left: -5rem;
+        border-top: .5rem solid white;
+        border-left: .5rem solid white;
+    }
+
+    .branch-three {
+        top: 27rem;
+        border-top: .5rem solid white;
+        border-right: .5rem solid white;
+    }
+
+    .branch-four {
+        top: 38rem;
+        left: -5rem;
+        border-top: .5rem solid white;
+        border-left: .5rem solid white;
+    }
+
+    .branch-line {
+        width: .5rem;
+        height: 46rem;
+    }
+}
+
+/* Küçük telefon */
+@media screen and (max-width: 375px) {
+
+    .branch-two .roadmap-text-container,
+    .branch-four .roadmap-text-container {
+        width: 10rem;
+        margin-left: -5rem;
+    }
+    .branch-one .roadmap-text-container,
+    .branch-three .roadmap-text-container {
+        width: 10rem;
+        margin-right: 0rem;
+    }
+
+    .roadmap-text-container p {
+        font-size: 0.9rem;
+    }
+
+    .branch-two {
+        top: 14rem;
+    }
+
+    .branch-three {
+        top: 25rem;
+    }
+
+    .branch-four {
+        top: 35rem;
+    }
+
+    .branch-line {
+        height: 42rem;
+    }
 }

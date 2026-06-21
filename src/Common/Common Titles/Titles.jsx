@@ -1,15 +1,14 @@
-import React from 'react';
 import './Titles.css';
 
-const Titles = ({ titleText }) => { // The title text is passed as a prop to be used in other components.
+const Titles = ({ titleText }) => {
   return (
-    <>
+    <div className='title-wrapper'>
       <div className="title-container">
         <h2>{titleText}</h2>
       </div>
-    
+
       <div className='line-container'></div>
-    </>
+    </div>
   );
 }
 

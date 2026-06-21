@@ -9,8 +9,6 @@ import UpButton from './../../src/Common/Common Up Button/UpButton';
 const MainPage = () => {
   return (
     <div className='main-page'>
-
-      <div>
         <UpButton/>
         <div className="header-container">
           <Header />
@@ -22,10 +20,8 @@ const MainPage = () => {
           <Collections />
           <Roadmap />
         </div>
-
         <Footer />
       </div>
-    </div>
   )
 }
 

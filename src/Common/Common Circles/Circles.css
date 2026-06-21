@@ -8,3 +8,8 @@
     border: .2rem solid;
     z-index: -5;
 }
+@media screen and (max-width:767px) {
+    .circles-container {
+      display: none;
+    }
+}
